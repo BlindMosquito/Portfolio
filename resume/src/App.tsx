@@ -1,16 +1,11 @@
 import React from 'react';
-import angieAndI from './images/wifeAndI.jpg';
-import './App.css';
 import Nav from './nav/nav'
+import './style.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="App-logo">
-        <Nav></Nav>
-        </div>
-      </header>
+    <div className='main'>
+      <Nav></Nav>
     </div>
   );
 }

@@ -1,0 +1,35 @@
+:root {
+    --black: rgb(0,0,0);
+    --white: rgb(255,255,255);
+    --dark-grey: rgb(40,44,52);
+    --dark-grey80: rgba(40,44,52,0.8);
+    --dark-grey50: rgba(40,44,52,0.5);
+    --dark-grey10: rgba(40,44,52,0.1);
+    --size-default: 16px;
+    --size-medium: 36px;
+    --size-large: 48px;
+}
+
+
+.main {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: var(--size-default);
+}
+
+.bot-line-left {
+    position: absolute;
+    width: 60vw;
+    height: 5px;
+    background-color: var(--black);
+    left: 0;
+    bottom: 12px;
+}
+
+.bot-line-right {
+    position: absolute;
+    width: 60vw;
+    height: 5px;
+    background-color: var(--black);
+    right: 0;
+    bottom: 5px;
+}
