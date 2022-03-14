@@ -1,6 +1,8 @@
 :root {
     --black: rgb(0,0,0);
     --white: rgb(255,255,255);
+    --red: rgb(153, 0, 0);
+    --blue: rgb(0, 0, 193);
     --dark-grey: rgb(40,44,52);
     --dark-grey80: rgba(40,44,52,0.8);
     --dark-grey50: rgba(40,44,52,0.5);
@@ -16,20 +18,4 @@
     font-size: var(--size-default);
 }
 
-.bot-line-left {
-    position: absolute;
-    width: 60vw;
-    height: 5px;
-    background-color: var(--black);
-    left: 0;
-    bottom: 12px;
-}
 
-.bot-line-right {
-    position: absolute;
-    width: 60vw;
-    height: 5px;
-    background-color: var(--black);
-    right: 0;
-    bottom: 5px;
-}

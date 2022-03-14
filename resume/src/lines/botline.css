@@ -1,0 +1,19 @@
+.bot-line-left {
+    position: absolute;
+    width: 60vw;
+    height: 5px;
+    background-color: var(--black);
+    left: 0;
+    bottom: 12px;
+    z-index: 2;
+}
+
+.bot-line-right {
+    position: absolute;
+    width: 60vw;
+    height: 5px;
+    background-color: var(--black);
+    right: 0;
+    bottom: 5px;
+    z-index: 2;
+}

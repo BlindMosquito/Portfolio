@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.link-container {
+    position: absolute;
+    top: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: var(--dark-grey10);
+    width: 100vw;
+    height: 50px;
+}
+
+.link {
+    position: relative;
+    background-color: var(--dark-grey10);
+    color: var(--white);
+    font-size: var(--size-default);
+    margin-top: 15px;
+    text-align: center;
+}

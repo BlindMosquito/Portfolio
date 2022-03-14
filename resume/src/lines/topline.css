@@ -1,0 +1,17 @@
+.top-line-left {
+    position: absolute;
+    width: 60vw;
+    height: 5px;
+    background-color: var(--white);
+    left: 0;
+    bottom: 12px;
+}
+
+.top-line-right {
+    position: absolute;
+    width: 60vw;
+    height: 5px;
+    background-color: var(--white);
+    right: 0;
+    bottom: 5px;
+}

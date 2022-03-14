@@ -1,0 +1,37 @@
+@media screen and (min-width: 900px) {
+    .experience-sub {
+        display: grid;
+        width: 90%;
+        margin-top:1%;
+        height: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: auto auto;
+        grid-gap: 50px;
+    }
+
+    .item-content {
+        position: absolute;
+        background-image: url('../images/drawing.jpg');
+        background-size: cover;
+        width: 40%;
+        height: 95%;
+        color: var(--white);
+        text-shadow: 1px 1px #000;
+        padding: 10px;
+        overflow: scroll;
+    }
+    .item-knowledge {
+        position: absolute;
+        background-image: url('../images/tech.jpg');
+        background-size: cover;
+        width: 40%;
+        height: 95%;
+        color: var(--white);
+        text-shadow: 1px 1px #000;
+        padding: 10px;
+        padding-left: 30px;
+        overflow: scroll;
+        
+    }
+}

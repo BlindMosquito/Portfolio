@@ -1,0 +1,69 @@
+@import '../style.css';
+.experience-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30% 67% 2%;
+    color: var(--white);
+}
+
+.sub-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#experience-title {
+    background-color: var(--black);
+}
+
+#img-experience-header {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+
+#experience-list {
+    background-color: var(--black);
+}
+
+.experience-item {
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#experience-end {
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+}
+
+#drawing-pic {
+    width: 100%;
+    height: 100%;
+    filter: brightness(20%);
+}
+
+#tech-pic {
+    width: 100%;
+    height: 100%;
+    filter: brightness(20%);
+}
+
+
+.exp-header {
+    font-size: var(--size-medium);
+}
+
+.exp-category {
+    font-size: var(--size-default);
+    font-weight: bold;
+}
+
+.exp-content {
+    font-size: var(--size-default);
+}
