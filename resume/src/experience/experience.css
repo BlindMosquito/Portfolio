@@ -1,69 +1,44 @@
 @import '../style.css';
-.experience-container {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 30% 67% 2%;
-    color: var(--white);
-}
 
-.sub-container {
+.exp-container {
     position: relative;
-    width: 100%;
-    height: 100%;
 }
 
-#experience-title {
+.experience-header {
+    position: relative;
+    height: 200px;
     background-color: var(--black);
 }
 
-#img-experience-header {
+.img-exp-header {
     width: 100%;
     height: 90%;
     object-fit: cover;
 }
 
-
-#experience-list {
-    background-color: var(--black);
+.item-experience {
+    background-image: url("../images/drawing.jpg");
+    background-size: cover;
 }
 
-.experience-item {
-    background-color: var(--white);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-#experience-end {
-    background-color: var(--white);
-    width: 100%;
-    height: 100%;
-}
-
-#drawing-pic {
-    width: 100%;
-    height: 100%;
-    filter: brightness(20%);
-}
-
-#tech-pic {
-    width: 100%;
-    height: 100%;
-    filter: brightness(20%);
-}
-
-
-.exp-header {
-    font-size: var(--size-medium);
-}
-
-.exp-category {
-    font-size: var(--size-default);
-    font-weight: bold;
+.item-knowledge {
+    background-image: url("../images/tech.jpg");
+    background-size: cover;
 }
 
 .exp-content {
-    font-size: var(--size-default);
+    position: relative;
+    width: 440px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--dark-grey10);
+}
+
+.exp-header {
+    font-size: var(--size-large);
+}
+
+.exp-category {
+    font-size: var(--size-medium);
 }

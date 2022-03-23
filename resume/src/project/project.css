@@ -1,59 +1,53 @@
 @import '../style.css';
 
 .project-container {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 30% 67% 2%;
-}
-
-.sub-container {
     position: relative;
-    width: 100%;
-    height: 100%;
 }
 
-#project-title {
+.project-header {
+    position: relative;
+    height: 30vh;
     background-color: var(--black);
 }
 
-#img-project-header {
+.img-project-header {
     width: 100%;
     height: 90%;
     object-fit: cover;
 }
 
-#project-list {
-    background-color: var(--black);
+.proj-link {
+    text-decoration: none;
 }
 
-.project-sub {
-    display: grid;
-    width: 80%;
-    margin-top:1%;
-    height: 90%;
+.item-rustproof {
+    background-image: url("../images/board.jpg");
+    background-size: cover;
+}
+
+.item-dwelmer {
+    background-image: url("../images/keyboard.jpg");
+    background-size: cover;
+}
+
+.item-forex {
+    background-image: url("../images/forex.jpg");
+    background-size: cover;
+}
+
+.project-content {
+    position: relative;
+    width: 440px;
+    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
-    grid-template-columns: auto auto;
-    grid-gap: 50px;
+    background-color: var(--dark-grey50);
 }
 
-
-
-.project-item {
-    padding: 1px;
-    background-color: aqua;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: red;
+.proj-header {
+    font-size: var(--size-large);
 }
 
-a { text-decoration: none;}
-
-#project-end {
-    background-color: var(--white);
-    width: 100%;
-    height: 100%;
+.project-category {
+    font-size: var(--size-medium);
 }

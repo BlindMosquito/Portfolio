@@ -6,7 +6,7 @@ class Links extends React.Component {
         return <div className="link-container">
             <a href="#nav-container" className="link">Home</a>
             <a href="#project-title" className="link">Projects</a>
-            <a href="#experience-title" className="link">Experience</a>
+            <a href="#exp-title" className="link">Experience</a>
             <a href="#about-title" className="link">About Me</a>
         </div>;
 
