@@ -37,8 +37,8 @@ class Experience extends React.Component {
                             <ul>Linux Server Maintenance</ul>
                             <ul>Maintian User Accounts</ul>
                             <ul>Maintian User Emails</ul>
-                            <ul>Company Website (Not the same as current)</ul>
                             <ul>Troubleshooting IT Problems</ul>
+                            <ul>Software Development</ul>
                         </ul>
                         <div className="exp-category"><br />Portland State University</div>
                         <ul>BS Computer Science</ul>
@@ -48,7 +48,6 @@ class Experience extends React.Component {
                     <div className="exp-content">
                         <div className="exp-header">Knowledge</div>
                         <div className="exp-category"><br />Software Development</div>
-                        <ul>Rest Api</ul>
                         <ul>Front End Web Development Such as React, Angular, ...</ul>
                         <ul>Back End Web Development Such as ASP.Net Core, PHP, Java ...</ul>
                         <ul>Database Development and Maintenance</ul>

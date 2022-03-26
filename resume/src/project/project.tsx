@@ -21,8 +21,8 @@ class Project extends React.Component {
                     <a className="proj-link" href="https://github.com/BlindMosquito/dwelmer">
                         <div className="project-content">
                             <div className="proj-header">Dwelmer</div>
-                            Used to take quick screenshots similar to snipping tool.
-                            Binds to the Print Screen Key.
+                            Used to take quick screenshots similar to snipping tool.<br />
+                            I created this to save time avoiding the extra window of screenshot programs.
                         </div>
                     </a>
                 </div>
