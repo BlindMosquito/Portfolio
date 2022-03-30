@@ -18,7 +18,7 @@ class Nav extends React.Component {
                 <img id="img-photo" src={photo} alt="me" />
             </div>
             <div className="sub-container email-container">
-                <div id="email">BlindMosquito@Outlook.com</div>
+                <div id="email">dagohman@gmail.com.com</div>
                 <BotLine></BotLine>
             </div>
         </div>;
