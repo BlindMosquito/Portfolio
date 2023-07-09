@@ -1,5 +1,20 @@
-#nav {
+$nav-width: 15%;
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: white;
-  width: 500px;
-  height: 300px;
+  width: $nav-width;
+  height: 100%;
+  color: chartreuse;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: $nav-width;
+  background-color: chocolate;
+  width: 100% - $nav-width;
+  height: 100%;
 }
