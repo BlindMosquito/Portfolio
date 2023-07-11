@@ -4,11 +4,11 @@ export class Experience {
   private readonly startDate:Date;
   private readonly endDate:Date;
 
-  constructor(business:string, role:string, startDate:Date, endDate:Date) {
+  constructor(business: string, role: string, startDate: string, endDate: string) {
     this.business = business;
     this.role = role;
-    this.startDate = startDate;
-    this.endDate = endDate;
+    this.startDate = new Date(startDate);
+    this.endDate = new Date(endDate);
     this.TestVariables();
   }
 

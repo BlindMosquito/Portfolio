@@ -1,0 +1,14 @@
+[
+  {
+    "business": "Yay business",
+    "role": "My role",
+    "startDate": "2020-03-09",
+    "endDate": "2020-04-10"
+  },
+  {
+    "business": "new business",
+    "role": "crazy",
+    "startDate": "2023-03-09",
+    "endDate": "2026-08-10"
+  }
+]
