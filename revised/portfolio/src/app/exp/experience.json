@@ -1,14 +1,67 @@
 [
   {
-    "business": "Yay business",
-    "role": "My role",
-    "startDate": "2020-03-09",
-    "endDate": "2020-04-10"
+    "business": "SMArtX Advisory",
+    "role": "Junior Software Engineer",
+    "startDate": "2022-06-01",
+    "endDate": "2023-06-01",
+    "description": "Turnkey asset management platform that handles stock and portfolios for financial advisors. Responsible for maintaining and updating stock market data, symbols, and prices as part of the Market Data Squad.",
+    "projects": [
+      {
+        "name": "Database Sync Tool Runner",
+        "description": "Our squad worked with a few databases that needed to stay in sync (Microsoft SQL, MySql, and DynamoDB). We wanted to run the sync and comparison tools using Aws Serverless Lambdas. The sync process could take much longer to run than the max fifteen minutes Lambdas allowed. I used Aws SQS and SQL Server to break up the tasks and run them synchronously.",
+        "technologies": [ ".Net Core", "Aws Lambda", "Aws SQS", "Aws CloudWatch", "Aws SNS and Alarm", "SQL Server", "Liquibase", "Docker", "TypeScript", "Aws CDK" ]
+      },
+      {
+        "name": "Secret Password Manager",
+        "description": "A combination of AWS Secrets Manager and Secrets Manager Cache to quickly look up and create database connection strings based on user AWS credentials.",
+        "technologies": [ ".Net Core", "Aws Secret Manager", "Aws Secret Manager Cache", ".Net Nuget Packages", "Json" ]
+      },
+      {
+        "name": "Load Balancing API",
+        "description": "Created load balancing tests for APIs and posted results to Amazon CloudWatch.",
+        "technologies": [ "K6", "TypeScript", "Docker", "Aws CloudWatch" ]
+      }
+    ]
   },
   {
-    "business": "new business",
-    "role": "crazy",
-    "startDate": "2023-03-09",
-    "endDate": "2026-08-10"
+    "business": "Gohman Mechanical",
+    "role": "It Specialist",
+    "startDate": "2012-01-01",
+    "endDate": "2022-01-01",
+    "description": "Starting my career as a Construction Assistant, I noticed multiple reports used Excel and contained duplicate data. I started looking for better methods and learned about Microsoft Access. I moved from Access to .Net and SQL Server and fell in love with software development. I started building automation projects to assist the company and handled the IT department while pursuing a degree in computer science.",
+    "projects": [
+      {
+        "name": "Gohman Mechanical Website.",
+        "description": "Simple web application to display company information and projects we worked on. The website was recently replaced with a Wix site for more accessible updates for current employees.",
+        "technologies": [ "Angular", "TypeScript", "SCSS", "HTML","Nginx", "Ubuntu Server" ]
+      },
+      {
+        "name": "Construction Quote Tracker",
+        "description": "Kept track of information acquired during the bidding phase of projects.",
+        "technologies": [ ".Net Framework", "WinForms", "SQL Server", "Microsoft Access" ]
+      },
+      {
+        "name": "Price Markup Calculator",
+        "description": "Small Android application that service technicians use to give vendor pricing and markup to customers in the field.",
+        "technologies": [ "Android", "Java" ]
+      },
+      {
+        "name": "Service Quote Estimator",
+        "description": "Create quotes for service repairs quickly.",
+        "technologies": [ "Excel", "VBA" ]
+      },
+      {
+        "name": "Transit and Tax Lookup.",
+        "description": "Web scraper tool to look up tax and transit based on job site address to assist with payroll analysis and reporting.",
+        "technologies": [ ".Net Framework" ]
+      }
+    ]
+  },
+  {
+  "business": "Gohman Mechanical",
+  "role": "Construction Assistant",
+  "startDate": "2008-01-01",
+  "endDate": "2022-01-01",
+  "description": "I started as an expeditor delivering equipment and material to job sites. After taking some college classes on AutoCAD, I worked my way into the office to assist with drawings, accounts payable, and accounts receivable for construction projects. I worked my way into designing, quoting, permitting, and helping general contractors and architects with projects with occupancies such as offices, warehouses, server rooms, clean rooms, manufacturing, classrooms, and more."
   }
 ]

@@ -4,7 +4,7 @@ describe('Experience', () => {
   it("The business name and role name should update from constructor", () => {
     const businessName:string = "business";
     const roleName:string = "business";
-    let exp: Experience = new Experience(businessName, roleName, new Date().toDateString(), new Date().toDateString());
+    let exp: Experience = new Experience(businessName, roleName, new Date().toDateString(), new Date().toDateString(), "description");
     let business = exp.Business();
     let role = exp.Role();
     expect(business).toBe(businessName);
@@ -12,21 +12,21 @@ describe('Experience', () => {
   });
   it("An error should be thrown with null business name", () => {
     expect(() => {
-      new Experience("", "Test", new Date().toDateString(), new Date().toDateString());
+      new Experience("", "Test", new Date().toDateString(), new Date().toDateString(), "description");
     }).toThrow(new Error("The business name cannot be null"));
 
     expect(() => {
-      new Experience("  ", "Test", new Date().toDateString(), new Date().toDateString());
+      new Experience("  ", "Test", new Date().toDateString(), new Date().toDateString(), "description");
     }).toThrow(new Error("The business name cannot be null"));
   });
 
   it("An error should be thrown with null role name", () => {
     expect(() => {
-      new Experience("Test", "", new Date().toDateString(), new Date().toDateString());
+      new Experience("Test", "", new Date().toDateString(), new Date().toDateString(), "description");
     }).toThrow(new Error("The role name cannot be null"));
 
     expect(() => {
-      new Experience("Test", "   ", new Date().toDateString(), new Date().toDateString());
+      new Experience("Test", "   ", new Date().toDateString(), new Date().toDateString(), "description");
     }).toThrow(new Error("The role name cannot be null"));
   });
 
@@ -35,7 +35,7 @@ describe('Experience', () => {
       "September", "October", "November", "December"];
     months.forEach(function (value, index) {
       let date:Date = new Date(2020, index, 1, 0, 0, 0, 0);
-      let exp: Experience = new Experience("business", "role", date.toDateString(), date.toDateString());
+      let exp: Experience = new Experience("business", "role", date.toDateString(), date.toDateString(), "description");
       let month = exp.GetMonth(date);
       expect(month).toBe(value);
     });
@@ -44,7 +44,7 @@ describe('Experience', () => {
   it("Should return correct start and end dates month and year", () => {
     let startDate:Date = new Date(2020, 2, 1, 0, 0, 0, 0);
     let endDate:Date = new Date(2023, 7, 1, 0, 0, 0, 0);
-    let exp: Experience = new Experience("business", "role", startDate.toDateString(), endDate.toDateString());
+    let exp: Experience = new Experience("business", "role", startDate.toDateString(), endDate.toDateString(), "description");
     expect(exp.StartMonth()).toBe("March");
     expect(exp.StartYear()).toBe(2020);
     expect(exp.EndMonth()).toBe("August");
@@ -55,7 +55,7 @@ describe('Experience', () => {
     let startDate:Date = new Date(2020, 2, 1, 0, 0, 0, 0);
     let endDate:Date = new Date(2020, 1, 13, 0, 0, 0, 0);
     expect(() => {
-      new Experience("business", "role", startDate.toDateString(), endDate.toDateString());
+      new Experience("business", "role", startDate.toDateString(), endDate.toDateString(), "description");
     }).toThrow(new Error("The end date must be after the start date"));
   })
 
@@ -63,7 +63,7 @@ describe('Experience', () => {
     let startDate:Date = new Date(1895, 2, 1, 0, 0, 0, 0);
     let endDate:Date = new Date(2020, 1, 13, 0, 0, 0, 0);
     expect(() => {
-      new Experience("business", "role", startDate.toDateString(), endDate.toDateString());
+      new Experience("business", "role", startDate.toDateString(), endDate.toDateString(), "description");
     }).toThrow(new Error("I doubt you have experience before 1900"));
   })
 
@@ -71,7 +71,20 @@ describe('Experience', () => {
     let startDate:Date = new Date(2020, 2, 1, 0, 0, 0, 0);
     let endDate:Date = new Date(2520, 1, 13, 0, 0, 0, 0);
     expect(() => {
-      new Experience("business", "role", startDate.toDateString(), endDate.toDateString());
+      new Experience("business", "role", startDate.toDateString(), endDate.toDateString(), "description");
     }).toThrow(new Error("Not sure if I'm more impressed this app is still being used by this year"));
-  })
+  });
+
+  it("Should throw error if no description", () => {
+    expect(() => {
+      new Experience("business", "role", new Date().toDateString(), new Date().toDateString(), " ");
+    }).toThrow(new Error("The description cannot be null"));
+  });
+
+  it("Should return the correct description", () => {
+    let exp = new Experience("business", "role", new Date().toDateString(), new Date().toDateString(), "test");
+    expect(exp.Description()).toBe("test");
+
+  });
+
 });
