@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ExpComponent } from './exp.component';
-import * as stream from "stream";
 
 describe('ExpComponent', () => {
   let component: ExpComponent;

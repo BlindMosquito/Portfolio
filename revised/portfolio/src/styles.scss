@@ -1,10 +1,52 @@
 $background-color: rgb(15, 0, 5);
-$color-default: rgb(200, 200, 200);
+$color-default: rgb(255, 255, 255);
+$color-heading: rgb(0, 200, 100);
+$color-heading-main: rgb(100, 100, 0);
+$color-heading-minor: rgb(63, 88, 75);
+$color-heading-sub: rgb(201, 0, 0);
+$color-link-hover: rgba(0, 200, 0, 0.5);
 $font-family-1: Georgia;
 $font-family-2: serif;
+$font-size-largest: 2.5em;
+$font-size-large: 2em;
+$font-size-medium: 1.4em;
+$font-size-small: 1.2em;
+$font-size-default: 1em;
 
 body {
   background-color: $background-color;
   color: $color-default;
   font-family: $font-family-1, $font-family-2;
+}
+
+.heading {
+  font-family: $font-family-1, $font-family-2;
+  color: $color-heading;
+  font-size: $font-size-largest;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.heading-main {
+  font-family: $font-family-1, $font-family-2;
+  color: $color-heading-main;
+  font-size: $font-size-large;
+}
+
+.heading-minor {
+  font-family: $font-family-1, $font-family-2;
+  color: $color-heading-minor;
+  font-size: $font-size-medium;
+}
+
+.heading-sub {
+  font-family: $font-family-1, $font-family-2;
+  color: $color-heading-sub;
+  font-size: $font-size-small;
+}
+
+.text {
+  font-family: $font-family-1, $font-family-2;
+  color: $color-default;
+  font-size: $font-size-default;
 }

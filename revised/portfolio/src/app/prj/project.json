@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Portfolio Project",
+    "description": "Website which shows off my experience",
+    "technologies": ["TypeScript", "Angular", "Jazmine", "JSON", "Html", "Scss"],
+    "link": "https://github.com/BlindMosquito/Portfolio",
+    "why": "This project not only works as a resume for my experience but also allowed me to brush up on my knowledge of Angular and Unit Testing in TypeScript."
+  },
+  {
+    "name": "Dwelmer",
+    "description": "Take Quick Screenshots similar to snipping tool",
+    "technologies": [ "Java" ],
+    "link": "https://github.com/BlindMosquito/dwelmer",
+    "why": "I needed to take many screen shots for a web security class. I wanted a method of just instantly selecting part of the screen to copy. The project also chalenged my knowledge of screen pixels and working with multiple monitor layouts."
+  },
+  {
+    "name": "Forex Helper",
+    "description": "MetaTrader 4 program that buys and sells currency pairs",
+    "technologies": [ "MQL4", "C++", "MetaTrader" ],
+    "link": "https://github.com/BlindMosquito/ForexHelper",
+    "why": "I love programming in C++ and got excited about playing around with forex stock strategies using MQL4 which is similar to C++."
+  },
+  {
+    "name": "RustProof",
+    "description": "Plugin for Rust Compiler which verifies conditions and functions",
+    "technologies": [ "Rust" ],
+    "link": "https://github.com/BlindMosquito/rustproof",
+    "why": "Capstone project at Portland State. I chose to work on this project as it was one of the more challenging projects presented and seemed like fun. At the time there was not a lot of information on the Rust Language, which forced my group to find creative ways of learning how to create this plugin, like contacting the Rust Developers."
+  }
+]

@@ -7,6 +7,7 @@ import { NavComponent } from './nav/nav.component';
 import { AbtComponent } from './abt/abt.component';
 import { ExpComponent } from './exp/exp.component';
 import { PrjComponent } from './prj/prj.component';
+import { SkillComponent } from './skill/skill.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PrjComponent } from './prj/prj.component';
     NavComponent,
     AbtComponent,
     ExpComponent,
-    PrjComponent
+    PrjComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,

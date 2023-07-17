@@ -25,6 +25,7 @@ export class Experience {
   StartYear():number { return this.startDate.getFullYear(); }
   EndYear():number { return this.endDate.getFullYear(); }
   Description():string { return this.description; }
+  Projects():Project[] | null { return this.projects; }
 
   GetMonth(date:Date):string {
     let months: string[] = ["January", "February", "March", "April", "May", "June", "July", "August",

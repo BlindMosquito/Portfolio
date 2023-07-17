@@ -1,23 +1,15 @@
-$nav-width: 15%;
-
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: white;
-  width: $nav-width;
-  height: 100%;
-  color: chartreuse;
+.comp-nav {
+  float: left;
+  position: sticky;
+  top: 10px;
+  margin-left: 20px;
 }
 
-.container {
-  position: fixed;
-  top: 0;
-  left: $nav-width;
-  background-color: chocolate;
-  width: 100% - $nav-width;
-  height: 100%;
+.comp-container {
+  margin-left: 300px;
+  margin-right: 100px;
+  left:300px;
+  top:50px;
 }
 .smt {
-  background-color: yellow;
 }

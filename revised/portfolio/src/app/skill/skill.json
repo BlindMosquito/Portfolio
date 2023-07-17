@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Languages",
+    "skill": ["C#", "Java", "TypeScript", "C++", "Python", "SQL"]
+  },
+  {
+    "name": "Database Types",
+    "skill": ["Sql Server", "PostgresSql", "MySql", "DynamoDB", "Redis"]
+  },
+  {
+    "name": "Development Environments",
+    "skill": [".Net Core", ".Net Framework", "Angular", "Node" ]
+  },
+  {
+    "name": "IDE",
+    "skill": ["JetBrains", "Visual Studio", "Visual Studio Code", "Vim"]
+  },
+  {
+    "name": "Development Tools",
+    "skill": ["Docker", "Liquibase", "Postman", "Insomnia", "K6", "JMeter", "Aws CDK"]
+  },
+  {
+    "name": "Cloud Platforms",
+    "skill": ["AWS", "Azure"]
+  },
+  {
+    "name": "Data File Types",
+    "skill": ["JSON", "YAML", "CSV", "XML"]
+  }
+]

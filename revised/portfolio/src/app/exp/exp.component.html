@@ -1,1 +1,16 @@
-<p>exp works!</p>
+<div class="heading">Experience</div>
+<div *ngFor="let exp of Experiences()">
+  <div class="heading-main">{{exp.Business()}}</div>
+  <div class="heading-minor">{{exp.Role()}}</div>
+  <p>{{exp.Description()}}</p>
+  <div *ngIf="exp.Projects()">
+    <div class="heading-minor">Projects Worked On:</div>
+    <div *ngFor="let proj of exp.Projects()">
+      <div class="heading-sub">{{proj.Name()}}</div>
+      <p class="text">{{proj.Description()}}</p>
+      <ul>
+        <li *ngFor="let tech of proj.Technologies()"> {{tech}} </li>
+      </ul>
+    </div>
+  </div>
+</div>
