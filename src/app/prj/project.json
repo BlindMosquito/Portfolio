@@ -1,30 +1,30 @@
 [
   {
     "name": "Portfolio Project",
-    "description": "Website which shows off my experience",
+    "description": "Dynamic website showcasing my experience",
     "technologies": ["TypeScript", "Angular", "Jazmine", "JSON", "Html", "Scss"],
     "link": "https://github.com/BlindMosquito/Portfolio",
-    "why": "This project not only works as a resume for my experience but also allowed me to brush up on my knowledge of Angular and Unit Testing in TypeScript."
+    "why": "The Portfolio Project serves as a comprehensive showcase of my professional experience and skills. By utilizing TypeScript, Angular, Jazmine, JSON, HTML, and SCSS, I aimed to create an interactive portfolio that not only presents my resume but also demonstrates my expertise in frontend development. Throughout the development process, I honed my knowledge of Angular and gained valuable experience in Unit Testing with TypeScript."
   },
   {
     "name": "Dwelmer",
-    "description": "Take Quick Screenshots similar to snipping tool",
+    "description": "Java application for quick screenshots",
     "technologies": [ "Java" ],
     "link": "https://github.com/BlindMosquito/dwelmer",
-    "why": "I needed to take many screen shots for a web security class. I wanted a method of just instantly selecting part of the screen to copy. The project also chalenged my knowledge of screen pixels and working with multiple monitor layouts."
+    "why": "During a web security class, I found myself in need of a quick and efficient way to capture screenshots. Dwelmer was born out of this necessity, providing a simple Java application to perform snipping-tool-like screen captures. The project allowed me to work with screen pixels and handle multiple monitor layouts, expanding my Java programming skills and solving a practical problem at the same time."
   },
   {
     "name": "Forex Helper",
-    "description": "MetaTrader 4 program that buys and sells currency pairs",
+    "description": "MetaTrader 4 program for automated currency pair trading",
     "technologies": [ "MQL4", "C++", "MetaTrader" ],
     "link": "https://github.com/BlindMosquito/ForexHelper",
-    "why": "I love programming in C++ and got excited about playing around with forex stock strategies using MQL4 which is similar to C++."
+    "why": "With a passion for programming in C++ and an interest in forex stock strategies, I delved into creating Forex Helper using MQL4 and C++. The program automates buying and selling currency pairs in MetaTrader 4, allowing me to explore algorithmic trading and deepen my expertise in financial markets."
   },
   {
     "name": "RustProof",
-    "description": "Plugin for Rust Compiler which verifies conditions and functions",
+    "description": "Innovative Rust compiler plugin for verifying conditions and functions",
     "technologies": [ "Rust" ],
     "link": "https://github.com/BlindMosquito/rustproof",
-    "why": "Capstone project at Portland State. I chose to work on this project as it was one of the more challenging projects presented and seemed like fun. At the time there was not a lot of information on the Rust Language, which forced my group to find creative ways of learning how to create this plugin, like contacting the Rust Developers."
+    "why": "As a capstone project at Portland State University, I chose to work on RustProof due to its challenging nature and intriguing possibilities. Being a Rust compiler plugin, it offered an opportunity to verify conditions and functions within Rust code. During development, my team and I explored the relatively uncharted territory of Rust, even reaching out to Rust developers for insights. This project significantly expanded my knowledge of Rust and compiler plugin architecture."
   }
 ]
