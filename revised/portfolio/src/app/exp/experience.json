@@ -31,7 +31,7 @@
     "description": "Starting my career as a Construction Assistant, I noticed multiple reports used Excel and contained duplicate data. I started looking for better methods and learned about Microsoft Access. I moved from Access to .Net and SQL Server and fell in love with software development. I started building automation projects to assist the company and handled the IT department while pursuing a degree in computer science.",
     "projects": [
       {
-        "name": "Gohman Mechanical Website.",
+        "name": "Gohman Mechanical Website",
         "description": "Simple web application to display company information and projects we worked on. The website was recently replaced with a Wix site for more accessible updates for current employees.",
         "technologies": [ "Angular", "TypeScript", "SCSS", "HTML","Nginx", "Ubuntu Server" ]
       },

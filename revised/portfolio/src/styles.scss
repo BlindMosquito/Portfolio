@@ -1,52 +1,102 @@
-$background-color: rgb(15, 0, 5);
-$color-default: rgb(255, 255, 255);
-$color-heading: rgb(0, 200, 100);
-$color-heading-main: rgb(100, 100, 0);
-$color-heading-minor: rgb(63, 88, 75);
-$color-heading-sub: rgb(201, 0, 0);
-$color-link-hover: rgba(0, 200, 0, 0.5);
-$font-family-1: Georgia;
-$font-family-2: serif;
-$font-size-largest: 2.5em;
-$font-size-large: 2em;
-$font-size-medium: 1.4em;
-$font-size-small: 1.2em;
-$font-size-default: 1em;
+// Font Families
+@font-face {
+  font-family: 'loto';
+  src: url("./assets/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'loto-extra-bold';
+  src: url("./assets/Lato/Lato-Black.ttf");
+}
+
+@font-face {
+  font-family: 'loto-bold';
+  src: url("./assets/Lato/Lato-Bold.ttf");
+}
+
+
+
+$font-family-1: loto;
+$font-family-2: Times New Roman;
+
+// Colors
+$color-rust: #B43511;
+$color-blood-red: #5F1805;
+$color-night: #101010;
+$color-dim-grey: #666666;
+$color-platinum: #E7E7E7;
+
+
+// Font Sizes
+$font-size-largest: 22pt;
+$font-size-large: 20pt;
+$font-size-medium: 18pt;
+$font-size-default: 16pt;
+
+// Font Weights
+$font-weight-bold-extra : 800;
+$font-weight-bold : 700;
+$font-weight-bold-semi : 600;
+$font-weight-normal : 400;
 
 body {
-  background-color: $background-color;
-  color: $color-default;
+  background-color: $color-platinum;
+  color: $color-dim-grey;
   font-family: $font-family-1, $font-family-2;
+  font-size: $font-size-default;
+  font-weight: $font-weight-normal;
 }
 
 .heading {
-  font-family: $font-family-1, $font-family-2;
-  color: $color-heading;
-  font-size: $font-size-largest;
+  color: $color-rust;
+  font-size: $font-size-large;
+  font-weight: $font-weight-bold;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
 .heading-main {
-  font-family: $font-family-1, $font-family-2;
-  color: $color-heading-main;
-  font-size: $font-size-large;
+  color: $color-blood-red;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold-semi;
 }
 
 .heading-minor {
-  font-family: $font-family-1, $font-family-2;
-  color: $color-heading-minor;
+  color: $color-dim-grey;
   font-size: $font-size-medium;
+  font-weight: $font-weight-bold-semi;
+  font-style: italic;
 }
 
 .heading-sub {
-  font-family: $font-family-1, $font-family-2;
-  color: $color-heading-sub;
-  font-size: $font-size-small;
+  color: $color-night;
+  font-size: $font-size-default;
+  font-weight: $font-weight-bold-semi;
 }
 
 .text {
-  font-family: $font-family-1, $font-family-2;
-  color: $color-default;
+  color: $color-night;
   font-size: $font-size-default;
+  font-weight: $font-weight-normal;
 }
+
+.my-name {
+  color: $color-blood-red;
+  font-size: $font-size-largest;
+  font-weight: $font-weight-bold-extra;
+}
+
+.nav-link {
+  color: $color-dim-grey;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: $color-rust;
+}
+
+
+.nav-selected {
+  color: $color-blood-red;
+}
+

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {offsetSegment} from "@angular/compiler-cli/src/ngtsc/sourcemaps/src/segment_marker";
+import {of} from "rxjs";
 
 @Component({
   selector: 'app-nav',
@@ -7,14 +9,34 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
 
-  Scroll(id:string):void {
+  scroll(id:string):void {
+    const width:number = window.innerWidth;
     let element = document.getElementById(id);
-    if(!element) return;
-    element.scrollIntoView({behavior: 'smooth'});
+    if(!element) throw new Error(`${id} could not be found to scroll to`);
+    if(width > 600) this.scrollLarge(element);
+    else if(width <= 420) this.scrollSmall(element);
+    else this.scrollMedium(element);
   }
 
-  LinkToGitHub():void {
-    window.location.href="https://github.com/BlindMosquito";
+  scrollLarge(element:HTMLElement):void {
+    const yOffset:number = -10;
+    let offset = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    this.scrollPage(offset);
   }
 
+  scrollMedium(element:HTMLElement): void {
+    const yOffset:number = -170;
+    let offset = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    this.scrollPage(offset);
+  }
+
+  scrollSmall(element:HTMLElement): void {
+    const yOffset:number = -200;
+    let offset = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    this.scrollPage(offset);
+  }
+
+  private scrollPage(yOffset:number): void {
+    window.scrollTo({top: yOffset, behavior: 'smooth'});
+  }
 }
