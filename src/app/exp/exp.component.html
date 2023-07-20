@@ -4,13 +4,15 @@
   <div class="heading-minor">{{exp.Role()}}</div>
   <p>{{exp.Description()}}</p>
   <div *ngIf="exp.Projects()">
+    <br />
     <div class="heading-minor">Projects Worked On:</div>
     <div *ngFor="let proj of exp.Projects()">
       <div class="heading-sub">{{proj.Name()}}</div>
-      <p class="text">{{proj.Description()}}</p>
-      <ul>
+      <p class="text exp-prj-text">{{proj.Description()}}</p>
+      <ul class="tech-list">
         <li *ngFor="let tech of proj.Technologies()"> {{tech}} </li>
       </ul>
+      <br />
     </div>
   </div>
 </div>

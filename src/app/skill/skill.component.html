@@ -1,7 +1,7 @@
 <div class="heading">Technologies I Have Worked With</div>
 <div *ngFor="let skl of Skills()">
   <div class="heading-main">{{skl.Name()}}</div>
-  <ul>
+  <ul class="tech-list">
     <li *ngFor="let tech of skl.Skills()">{{tech}}</li>
   </ul>
 </div>

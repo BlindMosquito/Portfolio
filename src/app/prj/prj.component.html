@@ -1,9 +1,10 @@
 <div class="heading">Projects</div>
 <div *ngFor="let prj of Projects()">
   <a class="heading-main nav-link" href="{{prj.Link()}}">{{prj.Name()}}</a>
-  <div class="heading-minor">{{prj.Description()}}</div>
-  <p class="text">{{prj.Why()}}</p>
-  <ul>
+  <div class="heading-sub">{{prj.Description()}}</div>
+  <p class="text prj-text">{{prj.Why()}}</p>
+  <ul class="tech-list">
     <li *ngFor="let tech of prj.Technologies()">{{tech}}</li>
   </ul>
+  <br />
 </div>
